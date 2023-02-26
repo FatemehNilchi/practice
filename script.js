@@ -1,8 +1,13 @@
-function clickFunc() {
-  alert("دست نزن تخم سگ");
+function clickFuncOn() {
+  let picElem = document.getElementById("pic-lamp");
+  let btnElm = document.getElementById("btn");
+  picElem.setAttribute("src", "./pic/bulboff.gif");
+  btnElm.setAttribute("onclick", "clickFuncOff()");
 }
 
-function clickFunc2() {
-  let h1Elem = document.getElementById("title");
-  h1Elem.style.color = "red";
+function clickFuncOff() {
+  let picElem = document.getElementById("pic-lamp");
+  let btnElm = document.getElementById("btn");
+  picElem.setAttribute("src", "./pic/bulbon.gif");
+  btnElm.setAttribute("onclick", "clickFuncOn()");
 }
