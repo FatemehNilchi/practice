@@ -1,9 +1,8 @@
-let ulElm = document.querySelector("ul");
-let newLi = document.createElement("li");
-let newLi2 = document.createElement("li");
-newLi.innerHTML = "products";
-newLi2.innerHTML = "users";
-newLi.setAttribute("class", "list-item");
-newLi2.setAttribute("class", "list-item");
-ulElm.append(newLi);
-ulElm.appendChild(newLi2);
+function clickFunc() {
+  alert("دست نزن تخم سگ");
+}
+
+function clickFunc2() {
+  let h1Elem = document.getElementById("title");
+  h1Elem.style.color = "red";
+}
