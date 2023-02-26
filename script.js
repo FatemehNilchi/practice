@@ -1,13 +1,13 @@
-function clickFuncOn() {
-  let picElem = document.getElementById("pic-lamp");
-  let btnElm = document.getElementById("btn");
-  picElem.setAttribute("src", "./pic/bulboff.gif");
-  btnElm.setAttribute("onclick", "clickFuncOff()");
-}
+let userElm = document.getElementById("user");
+let pasElm = document.getElementById("pass");
 
-function clickFuncOff() {
-  let picElem = document.getElementById("pic-lamp");
-  let btnElm = document.getElementById("btn");
-  picElem.setAttribute("src", "./pic/bulbon.gif");
-  btnElm.setAttribute("onclick", "clickFuncOn()");
+function funcValid() {
+  let userValue = userElm.value;
+  let passValue = pasElm.value;
+
+  if (userValue.length < 12 || passValue.length < 8) {
+    alert("مقادیر وارد شده اشتباه است");
+  } else {
+    alert("لاگین با موفقیت انجام شد");
+  }
 }
