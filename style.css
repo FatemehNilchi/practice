@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+#butn {
+  transition: all ease 0.4s;
+  background-color: #bbb5b3;
+  color: #3c352b;
+  border-radius: 15px;
+  border-style: none;
+  margin: 20px;
+  padding: 20px;
+  font-family: monospace;
+  font-size: 25px;
+  box-shadow: 1px 1px 4px 1px;
+}
+#butn:hover {
+  background-color: #3c352b;
+  color: #e6e6e6;
+  box-shadow: 0.5px 0.5px 2px 0px inset #bbb5b3;
+}
